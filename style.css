@@ -1,0 +1,168 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+.sail{
+	position: relative;
+	height: 400px;
+	width: 450px;
+    margin: 50px;
+	animation: move 5s ease infinite alternate;
+}
+
+@keyframes move{
+	from {left: 0;}
+	to {left: 800px;}
+}
+
+.room1{
+	height: 300px;
+	width: 300px;
+	border-radius: 50%;
+	border-left: 100px solid lightsalmon;
+	position: relative;
+}
+
+.room1:before{
+	content:"";
+	width: 5px;
+	height: 350px;
+	position: absolute;
+	top: 0;
+	left: 100px;
+	background: brown;
+}
+
+.room1:after{
+	content: "";
+	height: 200px;
+	width: 200px;
+	position: absolute;
+	top: 20%;
+	left: 0;
+	background: radial-gradient(circle at 0% 0%, transparent 200px, lightgreen 200px);
+	transform: rotate(-45deg);
+}
+
+.room2{
+	height: 0;
+	width: 50px;
+	border-top: 10px solid red;
+	border-right: 10px solid transparent;
+	border-bottom: 10px solid red;
+	position: absolute;
+	top: 0;
+	left: 205px;
+}
+
+.room3{
+	width: 80px;
+	height: 80px;
+	position: absolute;
+	bottom: 8px;
+	left: 8px;
+	border-top: 5px solid brown;
+	border-left: 5px solid brown;
+	transform: rotate(-45deg);
+}
+
+.room4{
+	height: 50px;
+	width: 300px;
+	border-top: 5px solid brown;
+	border-bottom: 5px solid brown;
+	display: block;
+	margin: 50px 0 0 50px;
+	position: relative;
+}
+
+.room4:before{
+	content: "";
+	width: 5px;
+	height: 63px;
+	position: absolute;
+	top: -63px;
+	left: -1px;
+	background: brown;
+}
+
+.room4:after{
+	content: "";
+	width: 5px;
+	height: 116px;
+	position: absolute;
+	top: -102px;
+	right: -42px;
+	background: brown;
+	transform: rotate(45deg);
+}
+
+.room5{
+	width: 150px;
+	height: 35px;
+	position: absolute;
+	left: 313px;
+	bottom: 40px;
+	border-right: 5px solid brown;
+	border-bottom: 5px solid brown;
+	transform: rotate(-45deg);
+}
+
+.room6,.room7,.room8{
+	height: 30px;
+	width: 30px;
+	border-radius: 50%;
+	border: 5px solid brown;
+	background: lightblue;
+	position: absolute;
+	bottom: 0;
+	left: 80px;
+}
+
+.room7{
+	left: 180px;
+}
+
+.room8{
+	left: 280px;
+}
